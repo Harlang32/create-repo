@@ -1,1 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<link rel="stylesheet" href="items.css" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|IM+Fell+Great+Primer+SC|Dosis|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin > <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
+  <body>
+    <div id="app">
+      <header>
+      <nav class="main-nav">
+        <ul class="horizontal">
+          <li><a href="/big_deals">Home Page</a></li>
+          <li><a href="/top_brands">View Specials</a></li>
+          <li><a href="/suggestions">Most Popular</a></li>
+          <li><a href="/help_contact">Help & Contact</a></li>
+        </ul>
+        <ul class="full-width">
+          <li><a href="/log_in">Log In/Sign Up</a></li>
+          <li><a href="/me">Account</a></li>
+          <li><a href=""><i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+        <ul class="short-width">
+          <li><a href=""><i class="material-icons">menu</i></a></li>
+        </ul>
+      </nav>
+      <nav class="sub-nav">
+        <span class="company-name">
+          Qwirty
+        </span>
+        <form class="search-form" action="/search">
+          <input type="text" name="search-term" placeholder="search">
+          <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <a class="credit-offer" href="/credit">0% Financing 24 Months</a>
+      </nav>
+    </header>
+
+      <main>
+        <!-- Styling for Side Bar -->
+        <style>
+            .company-name{
+              padding-left: 20px;
+              margin: 5px;
+              letter-spacing: 2px;
+              font-size: xx-large;
+              font-family: Roboto Slab;
+              text-transform: uppercase;
+            }
+          main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex: 0 0 1; 
+         
+          }
+          div {
+         
+            box-sizing: border-box;
+            background-color: aqua;
+            margin: 5px;
+            display: flex;
+            flex-basis: 256px;
+            flex-direction: column;
+            padding-right: 50px;
+          }
+
+          li{
+            list-style-type: none;
+            font-size: 15px;
+            padding: 5px;
+            margin: 20px;
+            text-transform: uppercase;
+            justify-self: center;
+
+          }
+
+          .buttons li{
+                
+                list-style-type: none;
+                text-decoration: none;
+                background-color: lightsalmon;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 20px;
+                height: px;
+                width: 150px;
+                border-style: solid;
+                border-color: black;
+                align-content: space-between      
+          }
+          .buttons li:hover{
+            border-bottom: 1px solid-black;
+          }
+          ul{
+            top: 150px;
+                list-style-type: none;
+                text-decoration: none;
+                margin: 5px;
+                
+                 
+                /* background-color: aqua; */
+          }
+          a{
+            text-decoration: none;
+              color: black;
+              justify-content: center;
+          
+          /* }
+          article{
+            align-content: center;
+            padding: 30px;
+            flex-wrap: wrap; */
+          
+          }
+
+        </style>
+        <div>
+            <ul class="buttons">
+         <li> <a href="">clothing & shoes</a></li>
+         <li> <a href="">electronics</a></li>
+         <li> <a href="">books</a></li>
+         <li> <a href="">electronics</a></li>
+         <li> <a href="">food & drinks</a></li> 
+         <li> <a href="">sports & outdoor</a></li>
+         <li> <a href="">appliances</a></li>
+         <li> <a href="">toys & baby</a></li>
+         <li> <a href="">garden</a></li>
+          </ul>
+        </div>
+          
+        
+          <section class="items">
+        <div class="item">
+          <h3 class="item-name"><span>Product Name</span><i class="add-item material-icons">add_shopping_cart</i></h3>
+          <img class="item-image"src="https://picsum.photos/240/200"
+            alt="product-name"/>
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+          <p class="fact-line"><span class="fact-name">Price:</span><span> $27.99</span></p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span><i class="add-item material-icons">add_shopping_cart</i></h3><img class="item-image"src="https://picsum.photos/240/200" alt="product-name"/>
+          <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+          <p class="fact-line"><span class="fact-name">Price:</span><span> $27.99</span></p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200"
+            
+            alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200" alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200" alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200" alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200" alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200"
+            alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200"
+            alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200" alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200"
+            alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        <div class="item">
+          <h3 class="item-name">
+            <span>Product Name</span
+            ><i class="add-item material-icons">add_shopping_cart</i>
+          </h3>
+          <img
+            class="item-image"
+            src="https://picsum.photos/240/200"
+            alt="product-name"
+          />
+          <p class="item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit!
+          </p>
+          <p class="fact-line">
+            <span class="fact-name">Price:</span><span> $27.99</span>
+          </p>
+        </div>
+        </section>
+        <style>
+            footer{
+              display: flex;
+              flex-direction: row;
+              background-color: lightsalmon;
+              padding: 1rem;
+              font-family: dosis;}
+
+              section{
+                margin-right: 5px;
+                display: flex;
+                flex-direction: column;
+              }
+                :last-child {
+                  margin: none;
+              }
+              h2{
+                color: black;
+                border-bottom: 2px solid black;
+                padding: 5px;
+                margin: 2px; }
+              a{ 
+                color: black;
+                text-decoration: none;
+                
+                padding: 7px;}
+              a:hover{
+                border-bottom: 1px solid black ;
+              }
+              ad{
+                background-color: lightgrey;
+                display: block;
+              }
+
+          </style> 
+        <aside>
+          <div class="ad">ADVERTISING</div> 
+
+        </aside>
+      </main>
+      <footer>
+        <section>
+        <h2>Customer Care</h2>
+        <a href="">Account</a>
+        <a href="">Orders</a>
+        <a href="">Policies</a>
+        <a href="">Credit</a>
+        <a href="">Help</a>
+      </section>
+      <section>
+        <h2>Sales</h2>
+        <a href="">Become a Seller</a>
+        <a href="">Manage Your Products</a>
+        <a href="">Advertise</a>
+      </section>
+      <section>
+        <h2>About Us</h2>
+        <a href="">Careers</a>
+        <a href="">Blog</a>
+        <a href="">Our History</a>
+        <a href="">Press Releases</a>
+        <a href="">Take a Tour</a>
+      </section>
+      </footer>
+    </div>
+  </body>
+</html>
